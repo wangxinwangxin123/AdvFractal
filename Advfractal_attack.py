@@ -73,11 +73,11 @@ def initialize_particles(pop_size):
     velocities = []
     for _ in range(pop_size):
         particle = [
-            random.uniform(0.3, 0.6),      # x
-            random.uniform(0.3, 0.6),      # y
-            0.4,      # size
-            3,          # depth: 限制最多3层
-        ] + [random.uniform(-90, 90) for _ in range(3)]  # 3个角度值
+            random.uniform(0.3, 0.6),     
+            random.uniform(0.3, 0.6),     
+            0.4,      
+            3,         
+        ] + [random.uniform(-90, 90) for _ in range(3)] 
         velocity = [random.uniform(-0.05, 0.05) for _ in range(len(particle))]
         particles.append(particle)
         velocities.append(velocity)
